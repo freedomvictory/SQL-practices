@@ -29,5 +29,7 @@ It's a simple command-line program that allows the user to manually enter and ex
 `SELECT * FROM table_hello`
 
 
+`PRAGMA table_info(table-name)`
 
+get table info, determine data type of columns in `SQLite` 
 
