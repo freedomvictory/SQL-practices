@@ -275,29 +275,17 @@ FROM
 INNER JOIN albums ON albums.albumid = tracks.albumid;
 ```
 
+## SQLITE LIMIT 
 
-## SQLITE GROUP BY 
+You can use `LIMIT` clause to constrain the number of rows return by the query 
 
-
-The `GROUP BY` clause is an optional clause of the `SELECT` statement. The `GROUP BY` clause a selected group of rows into summary rows by values of one or more columns<br />
-The following statement illustrates the syntax of the SQLite `GROUP BY` clause 
+basic format 
 
 ```SQL
-SELECT 
-    column_1,
-    aggregate_funciton(column_2)
+SELECT
+	column_list
 FROM
-    table
-GROUP BY 
-    column_1,
-    column_2;
-    
+	table
+LIMIT offset, row_count;
+
 ```
-
-
-
-
-
-
-
-
